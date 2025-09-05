@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aaruhi Infotec Pvt Ltd — CCTV Solutions</title>
+  <meta name="description" content="Aaruhi Infotec Pvt Ltd — CCTV cameras, installation, and maintenance. Request a quote or schedule a site survey." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff; --card:#ffffff; --muted:#374151; --accent:#0b74de; --accent-600:#075fbf; --maxw:1200px;
+      --radius:12px;
+      --container-pad:28px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;background:var(--bg);color:#0b1730;-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none}
+
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:var(--container-pad)}
+    header{padding:18px 0;position:absolute;top:0;left:0;right:0;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center;background:rgba(255,255,255,0.9);padding:6px 12px;border-radius:8px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-600));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
+    .brand h1{font-size:16px;margin:0}
+    .nav-links a{margin-left:18px;color:#0f172a;font-weight:600;background:#fff;padding:6px 12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+
+    /* HERO full viewport */
+    .hero{position:relative;height:100vh;min-height:720px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+    .hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.45);z-index:2}
+    .hero-content{position:relative;z-index:3;text-align:center;max-width:900px;padding:20px}
+    .hero-content h2{color:#fff;font-size:56px;line-height:1.1;margin-bottom:20px;text-shadow:0 4px 16px rgba(0,0,0,0.5)}
+    .hero-content p{color:#f3f4f6;font-size:18px;line-height:1.6;margin-bottom:24px}
+    .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    .btn{padding:14px 20px;border-radius:12px;border:0;cursor:pointer;font-weight:700;font-size:15px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:0 10px 30px rgba(11,20,40,0.08)}
+    .btn-ghost{background:transparent;border:1px solid #fff;color:#fff}
+
+    /* sections under hero */
+    section{padding:60px 0;border-top:6px solid #f3f4f6}
+    h3.section-title{font-size:24px;margin:0 0 12px;color:#111827}
+    .lead{color:#374151;margin-bottom:18px;font-size:16px}
+
+    /* brands */
+    .brands{display:flex;gap:30px;flex-wrap:wrap;justify-content:center;align-items:center}
+    .brand-pill{background:#fff;padding:20px;border-radius:14px;box-shadow:0 10px 40px rgba(11,20,40,0.06);display:flex;align-items:center;justify-content:center;min-width:180px;height:100px}
+    .brand-pill img{max-height:72px;max-width:160px;object-fit:contain}
+
+    /* about */
+    .about-card{background:#fff;padding:28px;border-radius:14px;box-shadow:0 12px 40px rgba(11,20,40,0.05)}
+    .about-card h4{margin-top:0;font-size:20px}
+    .about-card p, .about-card ul{color:#374151;line-height:1.7;font-size:16px}
+
+    /* contact */
+    form .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    input,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #d1d5db;background:#fff;font-size:14px}
+    textarea{min-height:140px;resize:vertical}
+
+    footer{background:#071230;color:#fff;padding:36px 0;margin-top:36px}
+    footer .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    footer a{color:#9ec9ff}
+
+    @media(max-width:980px){
+      .hero-content h2{font-size:32px}
+      .hero-content p{font-size:15px}
+      .nav-links{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">AI</div>
+        <div>
+          <h1 style="margin:0;font-size:16px;">Aaruhi Infotec Pvt Ltd</h1>
+          <div style="font-size:12px;color:var(--muted)">Security • Surveillance • Service</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#brands">Brands</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <img src="assets/hero.jpg" alt="CCTV camera large visual">
+    <div class="hero-content">
+      <h2>Protect what matters — reliable CCTV solutions for every site</h2>
+      <p>We design, install and maintain CCTV systems for homes, retail, offices and industrial sites. Quick site surveys, certified installers and warranty-backed support. Request a quote or schedule a complimentary site survey.</p>
+      <div class="cta">
+        <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request a Quote</button>
+        <button class="btn btn-ghost" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Free site survey</button>
+      </div>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <section id="brands">
+      <h3 class="section-title">Brands we recommend</h3>
+      <p class="lead">We partner with leading manufacturers to provide reliable cameras and support.</p>
+      <div class="brands">
+        <div class="brand-pill"><img src="assets/hikvision.png" alt="Hikvision"></div>
+        <div class="brand-pill"><img src="assets/dahua.png" alt="Dahua"></div>
+        <div class="brand-pill"><img src="assets/axis.png" alt="Axis"></div>
+        <div class="brand-pill"><img src="assets/sony.png" alt="Sony"></div>
+        <div class="brand-pill"><img src="assets/cpplus.png" alt="CP Plus"></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h3 class="section-title">About Aaruhi Infotec</h3>
+      <div class="about-card">
+        <h4>Who we are</h4>
+        <p><strong>Aaruhi Infotec Pvt Ltd</strong> is a specialist CCTV systems provider offering end-to-end services: consultation, equipment supply, professional installation and ongoing maintenance. We work with businesses and homeowners to design systems that balance coverage, image quality and budget.</p>
+        <h4 style="margin-top:18px">Services we provide</h4>
+        <ul>
+          <li>Free site survey and detailed, itemised proposals</li>
+          <li>Camera selection and network design (PoE/NVR/Cloud options)</li>
+          <li>Professional installation, commissioning and testing</li>
+          <li>Remote monitoring, analytics setup and maintenance plans</li>
+        </ul>
+        <h4 style="margin-top:18px">Our approach</h4>
+        <p>We prioritise right-fit technology: choosing sensors and optics suited for your lighting; using PoE for tidy installations; and configuring recording retention to meet compliance and storage cost goals.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3 class="section-title">Contact us — Request a quote</h3>
+      <p class="lead">Tell us a little about your site (indoor/outdoor, number of cameras, budget). We'll respond with a recommended system and estimated cost.</p>
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:20px;margin-top:18px">
+        <div>
+          <form id="contactForm" onsubmit="handleContact(event)">
+            <div class="row">
+              <input id="name" placeholder="Your name" required>
+              <input id="phone" placeholder="Phone">
+            </div>
+            <div style="margin-top:12px">
+              <input id="email" placeholder="Email" type="email" required>
+            </div>
+            <div style="margin-top:12px">
+              <textarea id="message" placeholder="Site details: indoor/outdoor, area, number of cameras, budget"></textarea>
+            </div>
+            <div style="margin-top:12px">
+              <button class="btn btn-primary" type="submit">Send request</button>
+            </div>
+            <div id="formMsg" style="margin-top:12px;color:var(--muted)"></div>
+          </form>
+        </div>
+
+        <aside class="about-card">
+          <h4 style="margin-top:0">Contact details</h4>
+          <p><strong>Aaruhi Infotec Pvt Ltd</strong></p>
+          <p>Email: <a href="mailto:info@aaruhi.com">info@aaruhi.com</a></p>
+          <p>Phone: +91-XXXXXXXXXX</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>&copy; <strong>Aaruhi Infotec Pvt Ltd</strong> — All rights reserved</div>
+      <div style="color:#9ec9ff">Built with care • Contact: <a href="mailto:info@aaruhi.com">info@aaruhi.com</a></div>
+    </div>
+  </footer>
+
+  <script>
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const subject = encodeURIComponent('Quote request from '+name);
+      const body = encodeURIComponent('Email: '+email+'
+
+Message:
+'+message);
+      document.getElementById('formMsg').textContent = 'Opening your email client to send the request...';
+      window.location.href = `mailto:info@aaruhi.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
